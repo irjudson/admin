@@ -12,6 +12,10 @@ App.Principal.reopen({
         return this.hasTag('executes:switchCommand');
     }.property('tags'),
 
+    hasLight: function () {
+        return this.hasTag('executes:lightCommand');
+    }.property('tags'),
+
     isDevice: function() {
         return this.is('device');
     }.property('type'),
