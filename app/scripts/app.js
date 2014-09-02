@@ -20,7 +20,7 @@ App.set('config', {
     //http_port: 3030,
     //protocol: 'http',
 
-    api_key: 'admin_local',
+    api_key: 'admin',
     force_https: true,
 
     log_levels: ['info', 'warn', 'error']
