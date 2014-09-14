@@ -16,12 +16,12 @@ require('scripts/views/messages/*');
 require('scripts/views/principals/*');
 
 App.set('config', {
-    //host: 'localhost',
-    //http_port: 3030,
-    //protocol: 'http',
+    host: 'localhost',
+    http_port: 3030,
+    protocol: 'http',
 
     api_key: 'admin',
-    force_https: true,
+    force_https: false,
 
     log_levels: ['info', 'warn', 'error']
 });
