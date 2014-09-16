@@ -1,10 +1,9 @@
 <table class="table">
     <thead>
         <tr>
-            <th>ID</th>
+            <th>KEY</th>
             <th>NAME</th>
             <th>TYPE</th>
-            <th>KEY</th>
             <th>REDIRECT URI</th>
             <th>IMAGES</th>
         </tr>
@@ -16,16 +15,13 @@
     {{#each apikey in controller}}
         <tr>
             <td>
-                {{apikey.id}}
+                {{apikey.key}}
             </td>
             <td>
                 {{apikey.name}}
             </td>
             <td>
                 {{apikey.type}}
-            </td>
-            <td>
-                {{apikey.key}}
             </td>
             <td>
                 {{apikey.redirect_uri}}
@@ -52,7 +48,6 @@
         <td>
             app
         </td>
-        <td></td>
         <td>
             <input type="text" class="form-control" id="newRedirectUri" placeholder="Redirect URI" />
         </td>
