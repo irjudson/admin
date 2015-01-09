@@ -96,7 +96,7 @@ App.resetSession = function() {
         App.set('user', new nitrogen.User(principal));
 
         App.set('service', new nitrogen.Service(App.get('config')));
-        App.set('session', App.get('service').startSession(App.get('user'), accessToken));
+        App.set('session', nitrogen.Session.startSession(App.get('service'), App.get('user'), accessToken));
         App.get('session').onAuthFailure(App.resetSession);
 
         App.advanceReadiness();
