@@ -16,12 +16,12 @@ require('scripts/views/messages/*');
 require('scripts/views/principals/*');
 
 App.set('config', {
-    host: 'localhost',
-    http_port: 3030,
-    protocol: 'http',
+    host: 'api.nitrogen.io',
+    http_port: 443,
+    protocol: 'https',
 
     api_key: 'admin',
-    force_https: false,
+    force_https: true,
 
     log_levels: ['info', 'warn', 'error']
 });
