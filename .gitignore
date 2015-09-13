@@ -5,3 +5,5 @@ dist
 .sass-cache
 .tmp
 app/bower_components
+app/nitrogen.js
+app/nitrogen-min.js
