@@ -16,7 +16,7 @@ require('scripts/views/messages/*');
 require('scripts/views/principals/*');
 
 App.set('config', {
-    host: 'localhost',  // could also be: 'api.nitrogen.io',
+    host: '0.0.0.0',  // could also be: 'api.nitrogen.io',
     http_port: 3030,    // could also be: 443,
     protocol: 'http',   // could also be: 'https',
 
